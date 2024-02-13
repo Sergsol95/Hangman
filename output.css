@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background: #f8f8f8;
+  padding: 2rem;
+}
+
+.hangman {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.second__page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallow {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  margin-bottom: 2rem;
+  width: 10rem;
+  height: 20rem;
+}
+.gallow__bottom, .gallow__middle, .gallow__top, .gallow__top::after,
+.gallow .head,
+.gallow .body,
+.gallow .right-arm,
+.gallow .left-arm,
+.gallow .left-leg,
+.gallow .right-leg {
+  background-color: #000;
+}
+.gallow__bottom {
+  width: 10rem;
+  height: 0.4rem;
+}
+.gallow__middle {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  height: 19.9rem;
+  width: 0.2rem;
+}
+.gallow__top {
+  position: absolute;
+  top: 0;
+  left: 3rem;
+  width: 10rem;
+  height: 0.2rem;
+}
+.gallow__top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 10rem;
+  width: 0.5rem;
+  height: 2rem;
+}
+.gallow .head {
+  position: absolute;
+  border-radius: 50%;
+  left: 11.8rem;
+  top: 1.3rem;
+  width: 3rem;
+  height: 3rem;
+}
+.gallow .body {
+  position: absolute;
+  left: 12.9rem;
+  top: 4.2rem;
+  width: 0.8rem;
+  height: 4.8rem;
+}
+.gallow .arm,
+.gallow .leg {
+  position: absolute;
+  width: 0.5rem;
+  height: 4.8rem;
+}
+.gallow .right-arm {
+  left: 14.5rem;
+  top: 2.7rem;
+  transform: rotate(49deg);
+}
+.gallow .left-arm {
+  left: 11.7rem;
+  top: 2.6rem;
+  transform: rotate(-44deg);
+}
+.gallow .left-leg {
+  left: 10.9rem;
+  top: 7.8rem;
+  transform: rotate(-126deg);
+}
+.gallow .right-leg {
+  left: 15.1rem;
+  top: 7.6rem;
+  transform: rotate(-56deg);
+}
+
+.alphabet {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+.winner {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  border: 0.1rem solid #000;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first__page_description,
+.alphabet,
+.winner {
+  color: #000;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.first__page_description {
+  font-size: 1.2rem;
+  margin-bottom: 4rem;
+}
+
+.underscored-letters {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.underscore {
+  width: 1.6rem;
+  height: 0.2rem;
+  background-color: #000;
+  margin-right: 0.2rem;
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,11 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./output.css" />
+    <title>The Hangman Game</title>
+  </head>
+  <body>
+    <div class="hangman">
+      <section class="first__page">
+        <h1 class="title">The Hangman</h1>
+        <p class="first__page_description">
+          One player thinks of a word or phrase, and the other player try to
+          guess, make sure to black out extras if player guess the wrong word
+          the line is filled on hangman, if hangman diagram has completed, the
+          guesser has lost the game.
+        </p>
+        <p class="first__page_description">ENJOY THE GAME AND HAVE FUN :)</p>
+      </section>
+      <section class="second__page">
+        <div class="gallow">
+          <div class="gallow__bottom"></div>
+          <div class="gallow__middle"></div>
+          <div class="gallow__top"></div>
+          <div class="head"></div>
+          <div class="body"></div>
+          <div class="right-arm arm"></div>
+          <div class="left-arm arm"></div>
+          <div class="right-leg leg"></div>
+          <div class="left-leg leg"></div>
+        </div>
+        <div class="underscored-letters">
+          <div class="underscore"></div>
+          <div class="underscore"></div>
+          <div class="underscore"></div>
+          <div class="underscore"></div>
+          <div class="underscore"></div>
+          <div class="underscore"></div>
+          <div class="underscore"></div>
+          <div class="underscore"></div>
+        </div>
+        <div class="alphabet">
+          A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+        </div>
+        <div class="winner">WINNER:</div>
+      </section>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+  </body>
 </html>
